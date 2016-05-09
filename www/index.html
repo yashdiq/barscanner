@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="mlm">
+	<head>
+		<title>MLM-Parts | Barcode Scanner</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="libs/OnsenUI/css/onsenui.css">
+		<link rel="stylesheet" type="text/css" href="libs/OnsenUI/css/onsen-css-components.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		
+	</head>
+	<body>
+		
+		<ons-navigator title="nav" var="nav">
+      		<ons-page ng-controller="PageCtrl">
+        		<div class="navigation-bar navigation-bar--android">
+				  <div class="navigation-bar__center navigation-bar--android__center">
+				    <span class="toolbar-button navigation-bar__line-height" style="padding:0">
+				      <!--i class="ion-cube" style="font-size:20px;"></i-->MLMParts
+				    <!/span>
+				  </div>
+				</div>
+
+				<content class="container">
+					<ons-row align="center" class="menu-row">
+						<!--ons-col width="50%" class="menu-item">
+							<ons-icon icon="fa-barcode"></ons-icon>
+						</ons-col-->
+						<ons-col class="menu-item">
+							<div class="menu-icon" ng-click="nav.pushPage('pages/bar.html')">
+								<i class="fa fa-barcode fa-4x" aria-hidden="true"></i><br>
+								<span>Barcode Checking</span>
+							</div>
+						</ons-col>
+					</ons-row>
+				</content>
+    		</ons-page>
+		</ons-navigator>
+
+		<script type="text/javascript" src="js/angular/angular.min.js"></script>
+		<script type="text/javascript" src="libs/OnsenUI/js/onsenui.min.js"></script>
+
+		<script type="text/javascript" src="cordova.js"></script>
+	    <script type="text/javascript" src="js/app/app.js"></script>
+	    <script type="text/javascript" src="js/app/ctrl.js"></script>
+	    <script type="text/javascript" src="js/app/services.js"></script>
+	    <script type="text/javascript" src="js/app/directive.js"></script>
+	</body>
+</html>
